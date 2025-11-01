@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(to bottom, #ff9a9e, #fecfef);  /* Gradasi pink lembut */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}.kartu-ulang-tahun {
+    background: white;  /* Latar putih bersih */
+    border: 5px solid #ff6b6b;  /* Border merah muda */
+    border-radius: 20px;  /* Sudut bulat kayak kartu */
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);  /* Bayangan biar 3D */
+    transition: transform 0.3s;  /* Efek halus */
+}.kartu-ulang-tahun:hover {
+    transform: scale(1.05);  /* Kartu agak membesar saat di-hover */
+}.isi-kartu h2 {
+    color: #e17055;  /* Oranye cerah */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;  /* Denyut ringan */
+}.isi-kartu p {
+    color: #636e72;  /* Abu-abu gelap */
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
